@@ -3,6 +3,12 @@
   box-sizing: border-box;
 }
 :root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
   --main-transition: 0.3s;
 }
 body {
@@ -27,7 +33,7 @@ ul {
 /* End Global  */
 /* Start Sidebar */
 .sidebar {
-  width: 200px;
+  width: 250px;
   box-shadow: 0 0 10px #ddd;
 }
 
@@ -86,5 +92,58 @@ ul {
 .sidebar ul li a i {
   margin-right: 10px;
 }
-
 /* End Sidebar */
+
+/* Start Content */
+
+/* start Head */
+
+.content {
+  overflow: hidden;
+}
+.content .search::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f002";
+  font-weight: 900;
+  margin-left: 15px;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--grey-color);
+}
+.content .search input {
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding-left: 30px;
+  width: 160px;
+  transition: var(--main-transition);
+}
+.content .search input:focus {
+  width: 200px;
+  border: 1px solid #777;
+}
+
+.content .search input:focus::placeholder {
+  transition: var(--main-transition);
+  opacity: 0.5;
+}
+.head .icons .notification::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+  top: -5px;
+  right: -5px;
+}
+.content .head .icons img {
+  width: 32px;
+  aspect-ratio: 1;
+  margin-left: 10px;
+}
+/* End Head */
+
+/* End Content */
