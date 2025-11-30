@@ -25,6 +25,9 @@
 .align-center {
   align-items: center;
 }
+.b-none {
+  border: none;
+}
 @media (max-width: 767px) {
   .d-block-mobile {
     display: block;
@@ -37,6 +40,20 @@
 }
 /* End Box */
 
+/* Heights and Widths Start */
+.w-full {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+.h-180 {
+  height: 180px;
+}
+.no-resize {
+  resize: none;
+}
+/* Heights and Widths End */
 /* Start Padding + Margin */
 .p-10 {
   padding: 10px;
@@ -68,8 +85,17 @@
 .mt-20 {
   margin-top: 20px;
 }
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
 .ml-10 {
   margin-left: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -104,12 +130,7 @@
 }
 /* ENd Position */
 /* Start Font */
-.w-full {
-  width: 100%;
-}
-.w-fit {
-  width: fit-content;
-}
+
 .txt-c {
   text-align: center;
 }
@@ -140,5 +161,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
 }
 /* End Components */

@@ -183,7 +183,7 @@ ul {
 }
 
 /* Start Wrapper */
-
+/* start Welcome widget */
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   gap: 20px;
@@ -205,7 +205,7 @@ ul {
 }
 
 .wrapper .welcome .intro img {
-  width: 170px;
+  width: 200px;
   margin-bottom: -10px;
 }
 .wrapper .avatar {
@@ -241,6 +241,18 @@ ul {
 .wrapper .welcome .visit:hover {
   background-color: var(--blue-alt-color);
 }
+/* End Welcome widget */
+
+/* start Quick Draft widget */
+.wrapper .quick-draft .visit {
+  transition: var(--main-transition);
+  cursor: pointer;
+}
+.wrapper .quick-draft .visit:hover {
+  background-color: var(--blue-alt-color);
+}
+
+/* End Quick Draft widget */
 
 /* End Wrapper */
 
