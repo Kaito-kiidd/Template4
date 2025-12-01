@@ -10,6 +10,12 @@
 .d-flex {
   display: flex;
 }
+.f-column {
+  flex-direction: column;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
 .space-between {
   justify-content: space-between;
 }
@@ -19,7 +25,7 @@
 .d-grid {
   display: grid;
 }
-.g-20 {
+.gap-20 {
   gap: 20px;
 }
 .align-center {
@@ -155,11 +161,20 @@
 .txt-c {
   text-align: center;
 }
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
 .fs-14 {
   font-size: 14px;
 }
 .fs-15 {
   font-size: 15px;
+}
+.fs-25 {
+  font-size: 25px;
 }
 .fw-bold {
   font-weight: bold;

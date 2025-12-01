@@ -316,6 +316,28 @@ ul {
 }
 /* End Targers Section */
 
+/* Start Tickets Section */
+
+.tickets .boxs {
+}
+
+.tickets .boxs .box {
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+/* End Tickets Section */
+
 /* End Wrapper */
 
 /* End Content */
+
+.tickets .box {
+  border: 1px solid #ccc;
+  width: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+  .tickets .box {
+    width: 100%;
+  }
+}
