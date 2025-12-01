@@ -40,7 +40,7 @@ ul {
 }
 .page {
   background-color: #f1f5f9;
-  min-height: 100vh;
+  min-height: 400vh;
 }
 /* End Global  */
 /* Start Sidebar */
@@ -318,9 +318,6 @@ ul {
 
 /* Start Tickets Section */
 
-.tickets .boxs {
-}
-
 .tickets .boxs .box {
   border-radius: 6px;
   border: 1px solid #eee;
@@ -340,4 +337,27 @@ ul {
   .tickets .box {
     width: 100%;
   }
+}
+
+.news .news-row:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.news .news-row h3 {
+  font-size: 16px;
+}
+
+.tasks .row:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.tasks .row .shape i {
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.tasks .row .shape i:hover {
+  color: var(--red-color);
 }

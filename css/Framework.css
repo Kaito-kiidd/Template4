@@ -16,6 +16,9 @@
 .f-wrap {
   flex-wrap: wrap;
 }
+-flex-1 {
+  flex: 1;
+}
 .space-between {
   justify-content: space-between;
 }
@@ -79,6 +82,9 @@
 .m-0 {
   margin: 0;
 }
+.mt-auto {
+  margin-top: auto;
+}
 .mt-0 {
   margin-top: 0;
 }
@@ -91,14 +97,29 @@
 .mt-20 {
   margin-top: 20px;
 }
-.ml-auto {
-  margin-left: auto;
-}
 .mr-auto {
   margin-right: auto;
 }
+.mr-15 {
+  margin-right: 15px;
+}
+.ml-auto {
+  margin-left: auto;
+}
 .ml-10 {
   margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-5 {
+  margin-bottom: 5px;
 }
 .mb-10 {
   margin-bottom: 10px;
@@ -110,6 +131,9 @@
 /* Start Colors */
 .bg-white {
   background-color: #fff;
+}
+.bg-eee {
+  background-color: #eee;
 }
 .bg-blue {
   background-color: var(--blue-color);
@@ -138,6 +162,9 @@
 .c-white {
   color: white;
 }
+.c-eee {
+  color: #eee;
+}
 .c-black {
   color: #000;
 }
@@ -146,6 +173,9 @@
 }
 .bg-eee {
   background-color: #eee;
+}
+.opacity-5 {
+  opacity: 0.5;
 }
 /* End Colors */
 /* Start Position */
@@ -157,7 +187,9 @@
 }
 /* ENd Position */
 /* Start Font */
-
+.txt-line {
+  text-decoration: line-through;
+}
 .txt-c {
   text-align: center;
 }
@@ -179,7 +211,9 @@
 .fw-bold {
   font-weight: bold;
 }
-
+.w-100 {
+  width: 100px;
+}
 @media (max-width: 767px) {
   .txt-c-mobile {
     text-align: center;
@@ -209,5 +243,10 @@
 .btn-shape {
   padding: 4px 10px;
   border-radius: 6px;
+}
+.sectoin {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
 }
 /* End Components */
