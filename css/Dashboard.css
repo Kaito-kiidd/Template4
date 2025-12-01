@@ -318,26 +318,22 @@ ul {
 
 /* Start Tickets Section */
 
-.tickets .boxs .box {
-  border-radius: 6px;
-  border: 1px solid #eee;
-}
-
-/* End Tickets Section */
-
-/* End Wrapper */
-
-/* End Content */
-
 .tickets .box {
   border: 1px solid #ccc;
   width: calc(50% - 10px);
+}
+.tickets .boxs .box {
+  border-radius: 6px;
+  border: 1px solid #eee;
 }
 @media (max-width: 767px) {
   .tickets .box {
     width: 100%;
   }
 }
+/* End Tickets Section */
+
+/* News Section Start */
 
 .news .news-row:not(:last-of-type) {
   margin-bottom: 20px;
@@ -349,6 +345,9 @@ ul {
   font-size: 16px;
 }
 
+/* News Section End */
+
+/* Tasks Section Start */
 .tasks .row:not(:last-of-type) {
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -360,4 +359,31 @@ ul {
 }
 .tasks .row .shape i:hover {
   color: var(--red-color);
+  font-weight: 900;
+  animation: shake 0.7s forwards;
 }
+/* Tasks Section End */
+/* End Wrapper */
+
+/* End Content */
+
+/* Animation Start */
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: translateY(2px) rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Animation End */
