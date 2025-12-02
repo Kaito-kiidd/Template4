@@ -314,6 +314,23 @@ ul {
 .green .progress {
   background-color: rgba(34, 197, 94, 0.2);
 }
+.targets .target-row {
+  transition: var(--main-transition);
+}
+
+.targets .blue:hover {
+  background-color: rgba(0, 117, 255, 0.2);
+  border-radius: 6px;
+}
+.targets .orange:hover {
+  background-color: rgba(245, 158, 11, 0.2);
+  border-radius: 6px;
+}
+.targets .green:hover {
+  background-color: rgba(34, 197, 94, 0.2);
+  border-radius: 6px;
+}
+
 /* End Targers Section */
 
 /* Start Tickets Section */
@@ -339,6 +356,12 @@ ul {
 
 /* News Section Start */
 
+.news img {
+  margin-left: 10px;
+}
+.news .btn-shape {
+  margin-right: 10px;
+}
 .news .news-row {
   transition: var(--main-transition);
 }
@@ -390,10 +413,51 @@ ul {
   font-weight: 900;
   animation: shake 0.7s forwards;
 }
+.tasks .shape {
+  margin-right: 10px;
+}
+
 /* Tasks Section End */
 /* End Wrapper */
 
 /* End Content */
+
+/* Start Top Search */
+.top-search .between-flex {
+  transition: var(--main-transition);
+}
+
+.top-search .between-flex:hover {
+  background-color: #eeeeee7d;
+  border-radius: 6px;
+}
+.top-search .between-flex .div {
+  margin-left: 5px;
+}
+.top-search .between-flex .btn-shape {
+  margin-right: 5px;
+}
+/* End Top Search */
+/* Laters Uploads Section Start */
+
+.latest-uploads img {
+  width: 40px;
+  height: 40px;
+}
+.latest-uploads ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.latest-uploads ul li {
+  transition: var(--main-transition);
+}
+.latest-uploads ul li:hover {
+  background-color: #eeeeee7d;
+  border-radius: 6px;
+}
+.latest-uploads .btn-shape {
+  margin-right: 10px;
+}
+/* Laters Uploads Section End */
 
 /* Animation Start */
 @keyframes shake {
@@ -415,11 +479,3 @@ ul {
 }
 
 /* Animation End */
-
-/* Laters Uploads Section Start */
-
-.latest-uploads img {
-  width: 40px;
-  height: 40px;
-}
-/* Laters Uploads Section End */

@@ -83,6 +83,9 @@
 .pr-20 {
   padding-right: 20px;
 }
+.pb-10 {
+  padding-bottom: 10px;
+}
 .m-20 {
   margin: 20px;
 }
@@ -106,6 +109,9 @@
 }
 .mr-auto {
   margin-right: auto;
+}
+.mr-10 {
+  margin-right: 10px;
 }
 .mr-15 {
   margin-right: 15px;
