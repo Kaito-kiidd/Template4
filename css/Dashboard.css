@@ -321,6 +321,10 @@ ul {
 .tickets .box {
   border: 1px solid #ccc;
   width: calc(50% - 10px);
+  transition: var(--main-transition);
+}
+.tickets .box:hover {
+  background-color: #eeeeee7d;
 }
 .tickets .boxs .box {
   border-radius: 6px;
@@ -335,10 +339,22 @@ ul {
 
 /* News Section Start */
 
+.news .news-row {
+  transition: var(--main-transition);
+}
+.news .news-row:hover {
+  background-color: #eeeeee7d;
+  border-radius: 6px;
+}
+
 .news .news-row:not(:last-of-type) {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
+}
+.news .news-row:last-of-type {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .news .news-row h3 {
@@ -348,6 +364,14 @@ ul {
 /* News Section End */
 
 /* Tasks Section Start */
+
+.tasks .row {
+  transition: var(--main-transition);
+}
+.tasks .row:hover {
+  background-color: #eeeeee7d;
+  border-radius: 6px;
+}
 .tasks .row:not(:last-of-type) {
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -356,6 +380,10 @@ ul {
 .tasks .row .shape i {
   cursor: pointer;
   transition: var(--main-transition);
+}
+.tasks .row:last-of-type {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 .tasks .row .shape i:hover {
   color: var(--red-color);
@@ -387,3 +415,11 @@ ul {
 }
 
 /* Animation End */
+
+/* Laters Uploads Section Start */
+
+.latest-uploads img {
+  width: 40px;
+  height: 40px;
+}
+/* Laters Uploads Section End */
