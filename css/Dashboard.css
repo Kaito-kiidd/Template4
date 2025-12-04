@@ -459,6 +459,50 @@ ul {
 }
 /* Laters Uploads Section End */
 
+/* Last Project Progress Section Start */
+
+.last-project ul li {
+  margin-top: 25px;
+}
+
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  width: 2px;
+  bottom: 0;
+  height: calc(100% - 25px);
+  background-color: var(--blue-color);
+}
+.last-project ul li::before {
+  content: "";
+  border: 2px solid var(--blue-color);
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 2px white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  display: block;
+  z-index: 1;
+}
+
+.last-project ul li.done::before {
+  background-color: var(--blue-color);
+}
+.last-project ul li.current::before {
+  animation: change-color 0.7s infinite alternate;
+}
+.last-project img {
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  opacity: 0.2;
+}
+
+/* Last Project Progress Section End */
+
 /* Animation Start */
 @keyframes shake {
   0% {
@@ -478,4 +522,12 @@ ul {
   }
 }
 
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: #fff;
+  }
+}
 /* Animation End */
